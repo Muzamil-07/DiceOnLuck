@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- TODO: ------------------- Required meta tags ------------------>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--TODO:----- Google Fonts(Optional) Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!--TODO:----- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--TODO:----- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!--TODO:------------- Custom Personalize css  -------------->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+
+    <!--TODO:-------------- Animation.css links(Please Include anim folder)  -------------->
+    <link rel="stylesheet" href="anim/css/libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <title>Dice Game</title>
+    <!--TODO:------ Adding icon of Max size of (100 X 100) in Tab bar -->
+    <link rel="shortcut icon" href="img/icon.png">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row" id="mainBox">
+
+            <!--!!------------- Player 1 Content ------------------>
+            <div class="col-6 active-player player1">
+                <h3 class="row justify-content-center PP-1">Player 1</h3>
+                <h2 class="row justify-content-center tot-1">0</h2>
+
+                <div class="row justify-content-center main-card">
+
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Current</h5>
+                            <p class="lead text-center current-1">0</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--!!------------- Player 2 Content ------------------>
+            <div class="col-6  player2">
+                <h3 class="row justify-content-center PP-2">Player 2</h3>
+                <h2 class="row justify-content-center tot-2">0</h2>
+
+                <div class="row justify-content-center main-card">
+
+                    <div class="card ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Current</h5>
+                            <p class="lead text-center current-2">0</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <button class="btn modalButton" type="button" data-toggle="modal" data-target="#my-modal">Help</button> -->
+    </div>
+
+    <div class="row justify-content-center"><button type="button" class="btn reset-button" btn-lg btn-block>🔄
+            New Game</button></div>
+    <div class="row justify-content-center"><button type="button" class="btn  roll-button" btn-lg btn-block>🎲 Roll
+            Dice</button></div>
+    <div class="row justify-content-center"><button type="button" class="btn  hold-button" btn-sm btn-block>📥
+            Hold</button></div>
+    <div class="row justify-content-center"><img src="img/dice-5.png" alt="diceImage" class="dice img-waves hidden">
+    </div>
+
+
+    <!-- <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Content</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+    <!--TODO:----- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--TODO:----- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!--TODO:----- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--TODO:----- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!--TODO:----- Customize(User) JavaScript -->
+    <script src="js/script.js"></script>
+    <!--TODO:------------ Font awesome icons link  -------------->
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+
+    <!--TODO:---------- Wow.js link and then script for scrolling animation  -------------->
+    <script src="anim/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
